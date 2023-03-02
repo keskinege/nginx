@@ -46,12 +46,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}, latest
           labels: ${{ steps.meta.outputs.labels }}
-      - name: Latest tag
-        uses: EndBug/latest-tag@v1.5.1
-        with:
-          # Tag description
-          description: Latest Tag.
-          # Name of the tag or branch to update
         
