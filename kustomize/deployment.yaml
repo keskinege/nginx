@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx-proxy
-        image: nginx
+        image: ghcr.io/keskinege/nginx:master
         ports:
         - containerPort: 80
