@@ -46,6 +46,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: "master"
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: "master"
        
