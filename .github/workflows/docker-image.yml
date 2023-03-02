@@ -46,9 +46,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ${{ steps.meta.outputs.tags }}
-            latest
-            master
-          labels: "master"
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: "latest"
        
