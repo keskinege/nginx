@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
-    app: nginx-proxy
+    app: nginx
   ports:
     - name: http
       port: 8081
