@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
-    app: nginx-proxy
+    app: nginx
 spec:
   replicas: 2
   selector:
@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx-proxy
+        app: nginx
     spec:
       containers:
       - name: nginx-proxy
