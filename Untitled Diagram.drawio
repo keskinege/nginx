@@ -1,1 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2023-03-03T12:09:06.935Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.20" etag="BFfl0QELTdrNNKvaHL6b" type="github"><diagram name="Page-1" id="slvNxsFSvXARN8EHa-pC">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-03T12:38:02.116Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="K6nQO4a_wrvr7Q5rtn54" version="20.8.20" type="github">
+  <diagram name="Page-1" id="slvNxsFSvXARN8EHa-pC">
+    <mxGraphModel dx="1276" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="Tw8f2Bac1lCtshFVuRJH-2" target="Tw8f2Bac1lCtshFVuRJH-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="220" as="sourcePoint" />
+            <mxPoint x="370" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-8" value="monitor&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tw8f2Bac1lCtshFVuRJH-7">
+          <mxGeometry x="0.1996" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-1" value="App@GitHub" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.github_code;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-4" value="github&lt;br&gt;workflow &lt;br&gt;to &lt;br&gt;generate image" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Tw8f2Bac1lCtshFVuRJH-1" target="Tw8f2Bac1lCtshFVuRJH-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="-20" as="sourcePoint" />
+            <mxPoint x="440" y="-70" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-2" value="Packages" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.cloud_service_package_file;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="42.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-5" value="FluxCD @ k8s" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/devops/continuous_deploy.svg;" vertex="1" parent="1">
+          <mxGeometry x="420" y="75" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-6" value="FluxCD Setup@GitHub" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.github_code;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="270" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-9" value="update&lt;br&gt;deployment" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Tw8f2Bac1lCtshFVuRJH-5" target="Tw8f2Bac1lCtshFVuRJH-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="290" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-12" value="Deployment @ k8s" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=deploy" vertex="1" parent="1">
+          <mxGeometry x="660" y="270" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Tw8f2Bac1lCtshFVuRJH-14" value="Change if required" style="endArrow=classic;html=1;rounded=0;entryX=0.005;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Tw8f2Bac1lCtshFVuRJH-6" target="Tw8f2Bac1lCtshFVuRJH-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="300" as="sourcePoint" />
+            <mxPoint x="485" y="129" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
