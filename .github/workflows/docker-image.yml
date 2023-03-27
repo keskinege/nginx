@@ -59,6 +59,17 @@ jobs:
           
       - name: Test
         run: docker compose -f docker-compose-test.yml run web nginx -t 
+        
+      - name: Rocket.Chat Notification
+        uses: RocketChat/Rocket.Chat.GitHub.Action.Notification@master
+        if: always()
+        with:
+            type: ${{ job.status }}
+            job_name: '*Lint Check*'
+            mention: 'here'
+            mention_if: 'failure'
+            channel: '#test123'
+            url: ${{ secrets.ROCKETCHAT_WEBHOOK }}
     
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
