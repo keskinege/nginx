@@ -57,14 +57,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           
-      - name: Docker compose tests run
-        uses: cloudposse/github-action-docker-compose-test-run@0.1.2
-        with:
-          workdir: ./
-          file: docker-compose-test.yml
-          service:  web
-          entrypoint: /bin/bash
-          command: nginx -t
+      - name: Test
+        run: docker compose -f docker-compose-test.yml run web nginx -t 
     
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
